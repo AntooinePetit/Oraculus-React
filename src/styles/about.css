@@ -1,0 +1,38 @@
+.a-propos main{
+   width: calc(100vw - 300px);
+   height: 100vh;
+
+   article{
+      display: block;
+      min-height: auto;
+      width: auto;
+   }
+
+   p,
+   li{
+       font-size: 14px;
+       color:#909090;
+   }
+
+   h2{
+       font-family: Roboto;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 100%;
+       text-transform: uppercase;
+       margin: 15px 0;
+   }
+
+   section{
+      align-self: center;
+      align-items: start;
+   }
+}
+
+/* Responsive */
+
+@media screen and (max-width:1024px) {
+   main{
+      width: 100%!important;
+   }
+}

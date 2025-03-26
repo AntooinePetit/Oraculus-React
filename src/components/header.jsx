@@ -1,8 +1,22 @@
 import { Link, useLocation } from "react-router-dom"
 import "../styles/header.css"
 import HeaderArrow from "./headerArrow"
+import { useEffect, useState } from "react";
 
 function Header(){
+   const [width, setWidth] = useState(window.innerWidth);
+   
+      useEffect(() => {
+         function handleResize() {
+           setWidth(window.innerWidth);
+         }
+     
+         window.addEventListener('resize', handleResize);
+     
+         return () => {
+           window.removeEventListener('resize', handleResize);
+         };
+      }, []);
    const location = useLocation().pathname
    return(
       <header>
@@ -14,7 +28,7 @@ function Header(){
                <li><Link to="/contact">Contact</Link></li>
             </ul>
          </nav>
-         {location == "/" ? <HeaderArrow /> : ''}
+         {location == "/" && width > 1024 ? <HeaderArrow /> : ''}
          
       </header>
    )
