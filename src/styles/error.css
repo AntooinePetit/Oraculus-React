@@ -1,0 +1,9 @@
+.error404 main{
+   height: 100vh;
+   grid-template-columns: 1fr;
+
+   h1{
+      align-self: center;
+      text-align: center;
+   }
+}
