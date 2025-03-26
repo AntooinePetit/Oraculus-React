@@ -1,0 +1,21 @@
+#nav-top{
+   display: flex;
+   gap: 38px;
+   margin-top: 50px;
+   margin-left: 100px;
+
+   a{
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-size: 18px;
+      display:block;
+      border-top: 1px solid #BFBFBF;
+      padding-top: 12px;
+
+      span{
+         display: block;
+         color:#BFBFBF;
+      }
+   }
+}

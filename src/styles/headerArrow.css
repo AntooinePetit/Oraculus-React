@@ -1,0 +1,19 @@
+#nav-arrows{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   height: 105px;
+   border-top: 1px solid #BFBFBF;
+
+   button{
+      background: none;
+      border: none;
+      color: #BFBFBF;
+   }
+   button:hover{
+      color: black;
+      cursor: pointer;
+   }
+   button:nth-child(2){
+      border-left: 1px solid #BFBFBF;
+   }
+}
