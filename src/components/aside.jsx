@@ -1,9 +1,11 @@
+import { useLocation } from "react-router-dom"
 import "../styles/aside.css"
 
-function Aside(){
+function Aside({source, signe}){
+   const location = useLocation().pathname
    return(
       <aside>
-            <img src="/images/capricorne.png" alt="Capricorne" />
+         {location == "/" ? <img src={source} alt={signe} /> : ''}
       </aside>
    )
 }
