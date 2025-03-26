@@ -4,6 +4,8 @@ import NavTop from "../components/navTop"
 import "../styles/home.css"
 import horoscopeStore from "../store/horoscopeStore"
 import { useEffect, useState } from "react"
+import moment from "moment"
+
 
 function Home(){
    // const body = document.querySelector('body')
@@ -26,6 +28,8 @@ function Home(){
 
    const {horoscope, currentIndex, nextIndex, prevIndex} = horoscopeStore()
 
+   const date = moment().format('YYYY-MM-DD');
+
    return (
       <div className="horoscope">
          <Header />
@@ -35,7 +39,7 @@ function Home(){
                <article>
                   <div id="head-horoscope">
                      <div>
-                        <p id="datejour">-- HOROSCOPE DU 28/09/2023</p>
+                        <p id="datejour">-- HOROSCOPE DU {date}</p>
                         <h1 id="signe">{horoscope[currentIndex].signe}</h1>
                         <span id="date">DU {horoscope[currentIndex].date}</span>
                      </div>

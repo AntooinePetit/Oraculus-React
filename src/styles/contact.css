@@ -1,0 +1,71 @@
+.contact main{
+   width: calc(100vw - 300px);
+   height: 100vh;
+   
+   p{
+      font-size: 14px;
+      color: #909090;
+      margin: 15px 0;
+   }
+
+   section{
+      align-self: center;
+      max-width: 500px;
+      align-items: start;
+   }
+
+   form{
+      display: grid;
+      max-width: 350px;
+      padding: 45px;
+      border: 1px solid #BFBFBF;
+      gap: 30px;
+      width: 100%;
+   }
+
+   input,
+   textarea{
+      font-weight: 400;
+      font-size: 16px;
+      color: #909090;
+      padding: 5px;
+      border: none;
+      border-bottom: 2px solid #BFBFBF;
+      resize: none;
+   }
+
+   input[type=submit]{
+      padding: 14px;
+      background: none;
+      border: 1px solid #BFBFBF;
+      transition: all 0.3s ease;
+   }
+
+   input[type=submit]:hover{
+      background: #BFBFBF;
+      color: #3F3F3F;
+   }
+
+   input::placeholder,
+   textarea::placeholder{
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #BFBFBF;
+   }
+
+  textarea{
+      min-height: 150px;
+  }
+}
+
+/* Reponsive */
+
+@media screen and (max-width:767px) {
+   .contact{
+      form{
+         padding: 15px!important;
+         max-width: 88%!important;
+      }
+   }
+}
