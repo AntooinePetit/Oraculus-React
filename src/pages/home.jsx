@@ -28,7 +28,7 @@ function Home(){
 
    const {horoscope, currentIndex, nextIndex, prevIndex} = horoscopeStore()
 
-   const date = moment().format('YYYY-MM-DD');
+   const date = moment().format('DD/MM/YYYY');
 
    return (
       <div className="horoscope">
