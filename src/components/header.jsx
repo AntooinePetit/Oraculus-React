@@ -4,7 +4,6 @@ import HeaderArrow from "./headerArrow"
 
 function Header(){
    const location = useLocation().pathname
-   console.log(location)
    return(
       <header>
          <Link to="/"><img src="/images/logo-oraculus.png" alt="Logo Oraculus" /></Link>

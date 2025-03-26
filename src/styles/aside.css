@@ -8,8 +8,21 @@ aside {
    flex-wrap: nowrap;
    align-items: center;
    background-position-x: 90px;
+   position: fixed;
+   right: 0;
 
    img{
       max-width: 360px;
+      width: 100%;
+   }
+}
+
+/* Responsive */
+
+@media screen and (max-width:1200px) {
+   aside{
+      img{
+         max-width: 280px!important;
+      }
    }
 }

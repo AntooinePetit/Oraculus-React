@@ -21,7 +21,7 @@ a{
 }
 
 main{
-   width: calc(100vw - 300px);
+   width: calc(97vw - 300px);
    left: 300px;
    position: absolute;
    display: grid;
@@ -30,10 +30,17 @@ main{
 
 section {
    padding-left: 32px;
+   display: flex;
+   flex-direction: column; /* Aligne NavTop en haut et article en dessous */
+   align-items: center; /* Centre horizontalement */
 
    article{
-      transform: translate3d(20px, 30%, 0px);
       padding-right: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centre verticalement */
+      min-height: calc(100vh - 100px); /* Ajuste la hauteur en fonction de NavTop */
+      width: 100%;
 
       p{
          font-size: 16px;
